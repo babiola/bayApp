@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+        <div class="col-md-8">
+                <table class="table table-hover">
+                        <thead>
+                          <tr>
+                              <th>ID</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        
+                          <tr>
+                              <td>{{object.id}}</td>
+                            <td>{{object.firstname}}</td>
+                            <td>{{object.lastname}}</td>
+                            <td>{{object.email}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </div>
+    </div>
+{% endblock %}
